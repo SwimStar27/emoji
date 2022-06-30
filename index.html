@@ -1,0 +1,90 @@
+ 
+<html>
+  <head>
+    <title>Fingers To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+  
+    <center>
+<h2 id="bake">Fingers To Emoji Web App</h2>
+      <br><br>
+      <span>&#9994;</span>
+      <span>&#9757;</span>
+      <span>&#9996;</span>
+      <span>&#128400;</span>
+      <h2 style="font-size: 22px;" id="ugh">Take Your Selfie To Generate Emoji
+      	<br>
+        <br>
+        <b style="color: navy">Are you Zero?</b>
+        <br>
+        <br>
+        <b style="color: #fff696">Are you One?</b>
+        <br>
+        <br>
+        <b style="color: navy">Are you Two?</b>
+        <br>
+        <br>
+        <b style="color: #fff696">Are you Five?</b>
+      </h2>
+      <br>
+      <br>
+      <div class="container">
+          <button onclick="snapshot();" class="btn btn-success">Capture Image</button>
+          <br> <br>
+        <h4>Webcam View:</h4>
+        <div id="camera"></div>
+        <br><br>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <button onclick="check();" class="btn btn-warning">Predict Fingers</button>
+        <br>
+        <br>
+	      <h4>Snapshot: </h4>
+        <div id="result"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <br> <br>
+      <div>
+        <h4>  Prediction #1:  </h4>
+        <h4 id="resultemotion1"></h4>
+        <h4 id="resultemoji1"></h4>
+
+        <h4> Prediction #2</h4>
+        <h4 id="resultemotion2"></h4>
+        <h4 id="resultemoji2"></h4>
+      </div>
+
+  
+
+
+
+
+
+      
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
